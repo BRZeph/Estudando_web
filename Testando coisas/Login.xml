@@ -1,0 +1,10 @@
+<users>
+    <user>
+        <login>123</login>
+        <password>123</password>
+    </user>
+    <user>
+        <login>login02</login>
+        <password>password02</password>
+    </user>
+</users>

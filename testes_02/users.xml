@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+    <user id="1">
+        <username>123</username>
+        <password>123</password> <!-- Ideally, passwords should be hashed -->
+        <role>admin</role>
+    </user>
+    <user id="2">
+        <username>user2</username>
+        <password>hashed_password2</password>
+        <role>user</role>
+    </user>
+    <!-- Add more users as needed -->
+</users>

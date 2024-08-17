@@ -1,0 +1,49 @@
+<!-- Criar um "Registre-se aqui" e ao registrar criar uma nova entrada aqui -->
+<databases>
+    <database name="GradesDB">
+
+
+    </database>
+    <database name="SalesDB">
+        <table name="Customers">
+            <row>
+                <customerID>1</customerID>
+                <name>John Doe</name>
+                <email>johndoe@example.com</email>
+            </row>
+            <row>
+                <customerID>2</customerID>
+                <name>Jane Smith</name>
+                <email>janesmith@example.com</email>
+            </row>
+        </table>
+        <table name="Orders">
+            <row>
+                <orderID>101</orderID>
+                <customerID>1</customerID>
+                <product>Product A</product>
+                <quantity>2</quantity>
+            </row>
+            <row>
+                <orderID>102</orderID>
+                <customerID>2</customerID>
+                <product>Product B</product>
+                <quantity>1</quantity>
+            </row>
+        </table>
+    </database>
+    <database name="InventoryDB">
+        <table name="Products">
+            <row>
+                <productID>P001</productID>
+                <name>Product A</name>
+                <stock>100</stock>
+            </row>
+            <row>
+                <productID>P002</productID>
+                <name>Product B</name>
+                <stock>50</stock>
+            </row>
+        </table>
+    </database>
+</databases>

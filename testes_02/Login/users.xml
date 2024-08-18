@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<users>
+  <user id="1">
+    <username>123</username>
+    <password>123</password>
+    <email>placeHolder@gmail.com</email>
+    <role>admin</role>
+  </user>
+  <user id="2">
+    <username>1234</username>
+    <password>1234</password>
+    <email>placeHolder2@gmail.com</email>
+    <role>user</role>
+  </user>
+  <user>
+    <username>12345</username>
+    <password>12345</password>
+    <email>ricardocardosodecampos@hotmail.com</email>
+    <role>user</role>
+  </user>
+  <user>
+    <username>123456</username>
+    <password>123456</password>
+    <email>ricardocardosodecampos@hotmail.com</email>
+    <role>user</role>
+  </user>
+  <user>
+    <username>1234567</username>
+    <password>1234567</password>
+    <email>ricardocardosodecampos@hotmail.com</email>
+    <role>user</role>
+  </user>
+</users>

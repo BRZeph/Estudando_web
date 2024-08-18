@@ -57,6 +57,11 @@ function updateTables() {
     document.getElementById("tableContainer").innerHTML = "Tabela";
 
     if (selectedDatabase) {
+        // Remove the "Select Database" option from the dropdown
+        if (dbSelect.firstElementChild && dbSelect.firstElementChild.value === "") {
+            dbSelect.removeChild(dbSelect.firstElementChild);
+        }
+
         const tables = Object.keys(databases[selectedDatabase]);
         if (tables.length > 0) {
             tables.forEach(table => {
@@ -76,6 +81,7 @@ function updateTables() {
         }
     }
 }
+
 
 
 function showTable() {

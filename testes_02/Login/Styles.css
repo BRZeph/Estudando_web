@@ -1,0 +1,78 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    font-family: Arial, sans-serif;
+}
+
+
+.login-form h2 {
+    text-align: center;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+.login-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px black;
+}
+
+.login-form input[type="text"] {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.login-form input[type="password"] {
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Aligns buttons to the right */
+    width: 300px; /* Same width as the login form */
+}
+
+.login-form button {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-button {
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: transparent;
+    color: #007BFF; /* Blue color for text */
+    border: 1px solid #007BFF; /* Border color matches text */
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none; /* Ensures no underline */
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 3px;
+}
+
+.register-button:hover {
+    background-color: #007BFF; /* Blue background on hover */
+    color: white; /* White text on hover */
+}

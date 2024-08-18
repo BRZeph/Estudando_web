@@ -1,0 +1,13 @@
+1) Make passwords hashed.
+2) Rename dashboard.xml file to something more coherent.
+3) Restructure the dashboard.xml file to have different contents for
+each user. User1 should not be able to open the site and see the same
+data as User2. Ideas on how to restructure:
+    -> 3.1) Make each user have a different xml file for the data.
+    -> 3.2) Add a node to the dashboard.xml for the userID.
+4) Implement the possibility for the user to insert data on their own
+xml.
+5) Differentiate global databases and instance databases:
+    -> 5.1) Global databases: common data for all users. Example:
+    tests dates etc.
+    -> 5.2) Instance databases: specific data for each user.

@@ -1,8 +1,21 @@
-<!-- Criar um "Registre-se aqui" e ao registrar criar uma nova entrada aqui -->
 <databases>
     <database name="GradesDB">
-
-
+        <table name="allGrades">
+            <row>
+                <StudentID>01</StudentID>
+                <Adm>10</Adm>
+                <VBA>9,3</VBA>
+                <Logic>8,8</Logic>
+                <DiscretMath>10</DiscretMath>
+            </row>
+            <row>
+                <StudentID>02</StudentID>
+                <Adm>7</Adm>
+                <VBA>3,3</VBA>
+                <Logic>9,8</Logic>
+                <DiscretMath>8</DiscretMath>
+            </row>
+        </table>
     </database>
     <database name="SalesDB">
         <table name="Customers">

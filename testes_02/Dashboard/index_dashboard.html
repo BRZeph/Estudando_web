@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="Styles_dashboard.css">
+	<meta charset="UTF-8">
+	<title>Database Dashboard</title>
+	<link rel="stylesheet" href="Styles_dashboard.css">
 </head>
 <body>
-    <div class="dashboard-container">
-        <header>
-            <p> Header aqui </p>
-        </header>
-        <nav> nav aqui </nav>
-        <div class="container2">
-            <aside>
-                <p> aside aqui </p>
-            </aside>
-            <div class="container3">
-                <p> tabela </p>
-            </div>
-        </div>
-        <footer> footer aqui </footer>
-    </div>
+<div class="dashboard-container">
+	<header>
+		<p>Header aqui</p>
+	</header>
+	<nav>nav aqui</nav>
+	<div class="container2">
+		<aside>
+			<p>Select a Database:</p>
+			<select id="databaseSelect" onchange="updateTables()">
+				<!-- Options will be dynamically populated by JavaScript -->
+			</select>
+
+			<p>Select a Table:</p>
+			<select id="tableSelect" onchange="showTable()">
+				<!-- Options will be dynamically populated based on the selected database -->
+			</select>
+		</aside>
+		<div class="container3">
+			<div id="tableContainer"></div>
+		</div>
+	</div>
+	<footer>footer aqui</footer>
+</div>
+
+<script src="Script_dashboard.js"></script>
 </body>
 </html>

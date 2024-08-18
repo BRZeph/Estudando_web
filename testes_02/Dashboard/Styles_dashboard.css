@@ -1,80 +1,88 @@
-/* General body and container styling */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-}
-
+/* Dashboard container */
 .dashboard-container {
     display: grid;
     grid-template-rows: 100px 50px 500px 50px;
-    grid-template-areas: 
-        "header"
-        "nav"
-        "main"
-        "footer";
     gap: 10px;
-    padding: 10px;
 }
 
+/* Header styling */
 header {
-    grid-area: header;
     background-color: #333;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 20px;
-    font-size: 24px;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
 }
 
+/* Navigation styling */
 nav {
-    grid-area: nav;
     background-color: #444;
     color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 0 20px;
-    font-size: 18px;
-}
-
-.container2 {
-    grid-area: main;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 20px;
-    height: 100%;
-}
-
-aside {
-    background-color: #555;
-    color: white;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-}
-
-.container3 {
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    justify-content: space-around;
+    font-size: 1.2em;
+    padding: 10px;
     border-radius: 5px;
 }
 
+/* Footer styling */
 footer {
-    grid-area: footer;
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px;
-    font-size: 14px;
+    font-size: 1em;
+    border-radius: 5px;
 }
 
-/* Additional styling for text and layout */
-p {
-    margin: 0;
+/* Main container with sidebar and content */
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+}
+
+/* Sidebar styling */
+aside {
+    padding: 10px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+/* Dropdown select styling */
+select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/* Main content area */
+.container3 {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-height: 300px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #f2f2f2;
 }
